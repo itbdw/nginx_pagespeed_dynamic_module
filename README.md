@@ -14,7 +14,9 @@ Just a collection of pagespeed dynamic module builded file for nginx.
 
 * Enable Pagespeed 
 
-add to http or server block
+Set up sample
+
+add code to http or server block
 ```
 pagespeed on;
 
@@ -22,7 +24,7 @@ pagespeed on;
 pagespeed FileCachePath /var/ngx_pagespeed_cache;
 ```
 
-add to server block
+add code to server block
 ```
 # Ensure requests for pagespeed optimized resources go to the pagespeed handler
 # and no extraneous headers get set.
@@ -36,5 +38,8 @@ location ~ "^/ngx_pagespeed_beacon$" { }
 
 ## Links
 
-[Pagespeed](https://github.com/pagespeed/ngx_pagespeed)
+[ngx_pagespeed](https://github.com/pagespeed/ngx_pagespeed)
+
+[PageSpeed Configuration](https://modpagespeed.com/doc/configuration)
+
 
